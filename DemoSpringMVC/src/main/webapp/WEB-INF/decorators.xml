@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding ="UTF-8"?>
+
+<decorators defaultdir=" /decorators">
+	<excludes>
+        <pattern>/verify</pattern>
+        <pattern>/sendMail</pattern>
+        <pattern>/Verifyforgotpassword</pattern>
+    </excludes>
+	<decorator name="trang-chu" page="index.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<decorator name="home" page="admin.jsp">
+		<pattern>/admin*</pattern>
+	</decorator>
+	
+	
+<!-- 	<decorator name="home" page="404.jsp">
+		<pattern>/404</pattern>
+	</decorator> -->
+	<decorator name="loginAdmin" page="loginAdmin.jsp">
+		<pattern>/loginAdmin*</pattern>
+	</decorator>
+</decorators>
